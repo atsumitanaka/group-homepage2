@@ -17,6 +17,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   background-color: #e8e8e8;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  overflow-x: hidden;
 }
 
 a {
@@ -63,7 +65,7 @@ img {
   z-index: 1000;
   background-color: #fff;
   transition: box-shadow 0.4s ease;
-  height: 80px;
+  height: 120px;
 }
 
 .navbar.scrolled {
@@ -95,11 +97,17 @@ img {
   color: #1a1a1a;
 }
 
-.navbar-brand img {
-  height: 36px;
+.navbar-logos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-logos img {
+  height: 102px;
   width: auto;
-  /* NIMS logo guideline: 保護エリア = 短辺(height) x 20% = 7.2px min */
-  padding: 8px;
+  /* NIMS logo guideline: 保護エリア = 短辺(height) x 20% = 21px min */
+  padding: 21px;
 }
 
 .navbar-brand-text span {
@@ -193,7 +201,7 @@ img {
    ======================================== */
 .hero {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 120px;
   position: relative;
 }
 
@@ -547,10 +555,13 @@ img {
    Top Page Members - square photos, cards
    ======================================== */
 .top-member-leader {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
+}
+
+.top-member-leader .top-member-card {
+  width: calc(100% / 3 - 1.34rem);
 }
 
 .top-member-grid {
@@ -669,7 +680,7 @@ img {
    Page Header (subpages)
    ======================================== */
 .page-header {
-  padding-top: calc(80px + 3.5rem);
+  padding-top: calc(120px + 3.5rem);
   padding-bottom: 2.5rem;
 }
 
@@ -1388,7 +1399,7 @@ img {
    ======================================== */
 @media (max-width: 1024px) {
   .top-member-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .intro-keywords {
@@ -1401,7 +1412,7 @@ img {
   .nav-links {
     display: none;
     position: fixed;
-    top: 80px;
+    top: 86px;
     left: 0;
     right: 0;
     background-color: #fff;
@@ -1433,9 +1444,26 @@ img {
     display: flex;
   }
 
+  /* Navbar — stack logos above group name on tablet */
+  .navbar {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .navbar-logos img {
+    height: 56px;
+    padding: 11px;
+  }
+
   /* Hero */
   .hero {
-    margin-top: 80px;
+    margin-top: 86px;
   }
 
   .hero-image {
@@ -1473,8 +1501,8 @@ img {
 
   /* Members */
   .top-member-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
   }
 
   .member-entry {
@@ -1525,7 +1553,7 @@ img {
 
   /* Page header */
   .page-header {
-    padding-top: calc(80px + 2rem);
+    padding-top: calc(86px + 2rem);
   }
 
   /* Section header */
@@ -1550,7 +1578,49 @@ img {
   }
 
   .top-member-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .top-member-leader .top-member-card {
+    width: calc(100% / 3 - 0.34rem);
+  }
+
+  .top-member-card {
+    padding: 1rem 0.5rem 0.75rem;
+  }
+
+  .top-member-photo {
+    width: 60px;
+    height: 80px;
+  }
+
+  .top-member-name {
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .top-member-title {
+    font-size: 0.55rem;
+  }
+
+  .top-member-email {
+    display: none;
+  }
+
+  .top-member-research {
+    font-size: 0.55rem;
+    line-height: 1.4;
+  }
+
+  .personal-page-btn {
+    font-size: 0.55rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .top-member-buttons {
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   .intro-keywords {
@@ -1573,11 +1643,45 @@ img {
     padding: 1.5rem;
   }
 
-  .navbar-brand-text {
-    font-size: 0.82rem;
+  /* Navbar — stack logos above group name */
+  .navbar {
+    height: auto;
+    padding: 0.5rem 0;
   }
 
   .navbar-inner {
-    padding: 0 1.25rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .navbar-logos {
+    gap: 0.25rem;
+  }
+
+  .navbar-logos img {
+    height: 40px;
+    padding: 8px;
+  }
+
+  .navbar-brand-text {
+    font-size: 0.7rem;
+  }
+
+  .nav-links {
+    top: 76px;
+  }
+
+  .hero {
+    margin-top: 76px;
+  }
+
+  .page-header {
+    padding-top: calc(76px + 2rem);
   }
 }
