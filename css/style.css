@@ -481,6 +481,14 @@ img {
   letter-spacing: 0.04em;
 }
 
+.intro-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
 .intro-text {
   line-height: 2;
   text-align: left;
