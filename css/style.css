@@ -1665,8 +1665,8 @@ img {
   }
 
   .navbar-logos img {
-    height: 40px;
-    padding: 8px;
+    height: 60px;
+    padding: 12px;
   }
 
   .navbar-brand-text {
@@ -1674,14 +1674,33 @@ img {
   }
 
   .nav-links {
-    top: 76px;
+    top: 90px;
   }
 
   .hero {
-    margin-top: 76px;
+    margin-top: 90px;
+  }
+
+  .hero-image {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .hero-image > img {
+    object-fit: contain;
+    height: auto;
+  }
+
+  .hero-overlay {
+    padding: 1rem 1rem 4rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
   }
 
   .page-header {
-    padding-top: calc(76px + 2rem);
+    padding-top: calc(90px + 2rem);
   }
 }
