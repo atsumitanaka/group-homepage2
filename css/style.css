@@ -1707,7 +1707,7 @@ img {
 }
 
 /* Landscape phones (wide but short) */
-@media (max-height: 500px) and (orientation: landscape) {
+@media (max-height: 650px) and (orientation: landscape) {
   .navbar {
     height: auto;
     padding: 0.3rem 0;
