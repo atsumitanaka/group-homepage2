@@ -1723,6 +1723,29 @@ img {
   .page-header {
     padding-top: calc(90px + 2rem);
   }
+
+  .footer {
+    font-size: 0.78rem;
+    padding: 1.5rem 0 0;
+  }
+
+  .footer-access {
+    line-height: 1.4;
+  }
+
+  .footer-access-title {
+    font-size: 0.78rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .footer-content {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+  }
 }
 
 /* Landscape phones (wide but short) */
