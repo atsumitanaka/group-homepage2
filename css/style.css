@@ -1795,11 +1795,11 @@ img {
   }
 
   .hero-overlay {
-    padding: 1rem 1.5rem 2rem;
+    padding: 1rem 5% 2rem;
   }
 
   .hero-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .section {
