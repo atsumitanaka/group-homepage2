@@ -68,7 +68,7 @@ img {
   z-index: 1000;
   background-color: #fff;
   transition: box-shadow 0.4s ease;
-  height: 120px;
+  height: 80px;
 }
 
 .navbar.scrolled {
@@ -107,10 +107,10 @@ img {
 }
 
 .navbar-logos img {
-  height: 102px;
+  height: 60px;
   width: auto;
-  /* NIMS logo guideline: 保護エリア = 短辺(height) x 20% = 21px min */
-  padding: 21px;
+  /* NIMS logo guideline: 保護エリア = 短辺(height) x 20% = 12px min */
+  padding: 12px;
 }
 
 .navbar-brand-text span {
@@ -204,7 +204,7 @@ img {
    ======================================== */
 .hero {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 80px;
   position: relative;
 }
 
@@ -691,7 +691,7 @@ img {
    Page Header (subpages)
    ======================================== */
 .page-header {
-  padding-top: calc(120px + 3.5rem);
+  padding-top: calc(80px + 3.5rem);
   padding-bottom: 2.5rem;
 }
 
@@ -1362,16 +1362,16 @@ img {
 
 .footer-logos {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: flex-end;
 }
 
 .footer-logos img {
-  height: 102px;
+  height: 60px;
   width: auto;
   transition: opacity 0.3s ease;
-  /* NIMS logo guideline: 保護エリア = 短辺(height) x 20% = 21px min */
-  padding: 21px;
+  /* NIMS logo guideline: 保護エリア = 短辺(height) x 20% = 12px min */
+  padding: 12px;
 }
 
 .footer-logos img:hover {
@@ -1567,7 +1567,11 @@ img {
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .footer-logos {
+    align-self: flex-end;
   }
 
   /* Page header */
