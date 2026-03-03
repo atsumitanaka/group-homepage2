@@ -1807,13 +1807,57 @@ img {
     height: 70px;
   }
 
-  .top-member-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
+  .top-member-leader {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .top-member-leader .top-member-card {
-    width: calc(100% / 3 - 1.34rem);
+    width: auto;
+  }
+
+  .top-member-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+
+  .top-member-card {
+    padding: 0.75rem 0.4rem 0.5rem;
+  }
+
+  .top-member-photo {
+    width: 50px;
+    height: 65px;
+  }
+
+  .top-member-name {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+
+  .top-member-title {
+    font-size: 0.5rem;
+  }
+
+  .top-member-email {
+    display: none;
+  }
+
+  .top-member-research {
+    font-size: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .personal-page-btn {
+    font-size: 0.5rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .top-member-buttons {
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
   .page-header {
