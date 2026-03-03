@@ -1413,6 +1413,10 @@ img {
   .intro-keywords {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .intro-text p {
+    font-size: 0.82rem;
+  }
 }
 
 @media (max-width: 768px) {
