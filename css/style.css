@@ -1807,20 +1807,19 @@ img {
     height: 70px;
   }
 
-  .top-member-leader {
+  .top-member-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .top-member-leader,
+  .top-member-grid {
+    display: contents;
   }
 
   .top-member-leader .top-member-card {
     width: auto;
-  }
-
-  .top-member-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
   }
 
   .top-member-card {
