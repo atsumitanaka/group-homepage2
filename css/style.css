@@ -500,7 +500,7 @@ img {
 .intro-text p {
   margin-bottom: 1.5rem;
   color: #555;
-  font-size: 0.92rem;
+  font-size: 0.78rem;
 }
 
 .intro-text p:last-child {
@@ -547,14 +547,14 @@ img {
 
 .news-timeline-item .date {
   color: #999;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   min-width: 100px;
   font-weight: 400;
 }
 
 .news-timeline-item .news-title {
   color: #333;
-  font-size: 0.92rem;
+  font-size: 0.78rem;
   line-height: 1.7;
 }
 
@@ -655,7 +655,7 @@ img {
 }
 
 .top-member-research {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 0.75rem;
@@ -773,13 +773,13 @@ img {
 
 .date {
   color: #999;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 400;
 }
 
 .preview {
   color: #666;
-  font-size: 0.88rem;
+  font-size: 0.78rem;
   line-height: 1.7;
   margin-top: 0.5rem;
 }
@@ -860,7 +860,7 @@ img {
 
 .member-info .email {
   color: #888;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   margin-bottom: 0.5rem;
 }
 
@@ -891,7 +891,7 @@ img {
 
 .member-info .research-title {
   color: #333;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
@@ -993,7 +993,7 @@ img {
   margin-top: 0.75rem;
   line-height: 2.2;
   color: #555;
-  font-size: 0.88rem;
+  font-size: 0.78rem;
 }
 
 /* ========================================
@@ -1038,7 +1038,7 @@ img {
 }
 
 .researcher-lead-title {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: #999;
   margin-bottom: 0.4rem;
   font-weight: 400;
@@ -1046,7 +1046,7 @@ img {
 }
 
 .researcher-lead-email {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: #888;
   margin-bottom: 0.3rem;
 }
@@ -1077,7 +1077,7 @@ img {
 }
 
 .researcher-lead-research {
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 500;
   color: #333;
   margin-bottom: 0.15rem;
@@ -1153,7 +1153,7 @@ img {
 .research-intro p {
   margin-bottom: 1.5rem;
   color: #555;
-  font-size: 0.92rem;
+  font-size: 0.78rem;
 }
 
 .research-intro p:last-child {
@@ -1331,7 +1331,7 @@ img {
   background-color: #fff;
   color: #555;
   padding: 3.5rem 0 0;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 }
 
 .footer-inner {
@@ -1353,7 +1353,7 @@ img {
 }
 
 .footer-access-title {
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: #1a1a1a;
   margin-bottom: 0.5rem;
